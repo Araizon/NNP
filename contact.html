@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>যোগাযোগ - নাতি নাতনির পাঠশালা</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Exo+2:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <img src="https://i.ibb.co.com/kVfH27Hw/logo.png" alt="NNP" onerror="this.style.display='none';document.querySelector('.loader-text-logo').style.display='block'">
+      <span class="loader-text-logo" style="display:none">NNP</span>
+    </div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <p class="loader-tagline">লোড হচ্ছে...</p>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="https://i.ibb.co.com/kVfH27Hw/logo.png" alt="NNP" onerror="this.outerHTML='<span class=\'logo-text-fallback\'>NNP</span>'">
+      <span class="nav-brand">নাতি নাতনির পাঠশালা</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">হোম</a>
+      <a href="courses.html" class="nav-link">কোর্সসমূহ</a>
+      <a href="about.html" class="nav-link">আমাদের সম্পর্কে</a>
+      <a href="contact.html" class="nav-link active">যোগাযোগ</a>
+      <div class="lang-dropdown" style="position:relative; display:inline-block; margin-left:5px;">
+        <button class="nav-link" style="background:none;border:none;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;color:var(--text)" onclick="const m=this.nextElementSibling; m.style.display=m.style.display==='none'?'block':'none';">⋮</button>
+        <div class="lang-menu" style="display:none;position:absolute;top:100%;right:0;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:10px;min-width:100px;box-shadow:0 5px 15px rgba(0,0,0,0.3)">
+          <a href="#" style="display:block;padding:8px 10px;color:var(--text);border-radius:5px;text-decoration:none;font-weight:600;font-family:var(--font-en)" onclick="alert('English version coming soon!')">English</a>
+          <a href="#" style="display:block;padding:8px 10px;color:white;background:var(--primary);border-radius:5px;text-decoration:none;font-weight:600;margin-top:5px">বাংলা</a>
+        </div>
+      </div>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">হোম</a>
+    <a href="courses.html" class="nav-link">কোর্সসমূহ</a>
+    <a href="about.html" class="nav-link">আমাদের সম্পর্কে</a>
+    <a href="contact.html" class="nav-link">যোগাযোগ</a>
+    <div style="display:flex; gap:10px; padding:10px;">
+      <a href="#" style="padding:5px 10px;color:white;background:var(--primary);border-radius:5px;text-decoration:none;font-weight:600">বাংলা</a>
+      <a href="#" style="padding:5px 10px;color:var(--text);border-radius:5px;text-decoration:none;font-weight:600;border:1px solid var(--border)" onclick="alert('English version coming soon!')">English</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <span class="section-badge">📬 যোগাযোগ</span>
+  <h1 class="section-title">আমাদের সাথে <span class="glow-text">যোগাযোগ</span> করো</h1>
+  <p style="color:var(--text-muted);margin-top:10px">যেকোনো প্রশ্ন বা কোর্স অর্ডারের জন্য আমাদের সাথে কথা বলো</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid" style="margin-bottom:60px">
+      <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>সরাসরি WhatsApp এ মেসেজ করো। কোর্স অর্ডার, জিজ্ঞাসা বা যেকোনো সমস্যায় আমরা আছি।</p>
+        <p style="color:var(--accent);font-weight:700;margin-bottom:20px;font-family:'Exo 2'">01940889033</p>
+        <a href="https://wa.me/8801940889033" target="_blank" class="contact-link wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp এ মেসেজ করো
+        </a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <h3>Messenger</h3>
+        <p>Facebook Messenger এ আমাদের সাথে কথা বলতে পারো। যেকোনো সময় মেসেজ করো।</p>
+        <p style="color:var(--accent);font-weight:700;margin-bottom:20px">NNP Messenger</p>
+        <a href="https://www.messenger.com/t/61553759634869" target="_blank" class="contact-link msg">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.936 1.46 5.554 3.745 7.268V22l3.418-1.88c.913.254 1.88.39 2.837.39 5.523 0 10-4.145 10-9.267C22 6.145 17.523 2 12 2zm.99 12.48l-2.545-2.712-4.97 2.712 5.468-5.808 2.61 2.712 4.905-2.712-5.468 5.808z"/></svg>
+          Messenger এ মেসেজ করো
+        </a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h3>Email</h3>
+        <p>ইমেইলে যোগাযোগ করতে চাইলে আমাদের মেইল করো। আমরা যত তাড়াতাড়ি সম্ভব উত্তর দেবো।</p>
+        <p style="color:var(--accent);font-weight:600;margin-bottom:20px;font-size:0.85rem">wordfile4@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wordfile4@gmail.com" target="_blank" class="contact-link em">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email করো
+        </a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🎯</div>
+        <h3>কোর্স অর্ডার</h3>
+        <p>যেকোনো কোর্স কিনতে WhatsApp এ মেসেজ করো। পেমেন্টের পর তোমাকে কোর্সে এক্সেস দেওয়া হবে।</p>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:20px">কোর্সের নাম ও ক্লাস উল্লেখ করো</p>
+        <a href="https://wa.me/8801940889033?text=আমি একটি কোর্স কিনতে চাই" target="_blank" class="contact-link wa">
+          কোর্স অর্ডার করো
+        </a>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="contact-social-section">
+      <div class="section-header">
+        <span class="section-badge">🌐 সোশ্যাল মিডিয়া</span>
+        <h2 class="section-title">আমাদের <span class="glow-text">ফলো করো</span></h2>
+        <p style="color:var(--text-muted)">আমাদের সোশ্যাল মিডিয়ায় যুক্ত থাকো</p>
+      </div>
+      <div class="contact-social-grid">
+        <a href="https://www.facebook.com/share/1C1SZFnPAm/?mibextid=wwXIfr" target="_blank" class="contact-social-btn fb">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook Page
+        </a>
+        <a href="https://www.facebook.com/share/g/161bbTdTSP/?mibextid=wwXIfr" target="_blank" class="contact-social-btn fb-g">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Facebook Group
+        </a>
+        <a href="https://www.tiktok.com/@nati_natnir_pathsala1" target="_blank" class="contact-social-btn tt">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          TikTok
+        </a>
+        <a href="https://facebook.com/rajurbraj22" target="_blank" class="contact-social-btn ig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/@nati-natnir-pathsala" target="_blank" class="contact-social-btn yt">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0a0f1e"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-logo"><img src="https://i.ibb.co.com/kVfH27Hw/logo.png" alt="NNP" onerror="this.style.display='none'"><span>নাতি নাতনির পাঠশালা</span></div>
+      <p>ক্লাস ৬ থেকে ১২ পর্যন্ত অনলাইন প্রাইভেট টিউশন।</p>
+    </div>
+    <div class="footer-col">
+      <h4>দ্রুত লিংক</h4>
+      <ul>
+        <li><a href="index.html">হোম</a></li>
+        <li><a href="courses.html">কোর্সসমূহ</a></li>
+        <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+        <li><a href="contact.html">যোগাযোগ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>যোগাযোগ</h4>
+      <p>📱 <a href="https://wa.me/8801940889033">01940889033</a></p>
+      <p>📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wordfile4@gmail.com" target="_blank">wordfile4@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© ২০২৪ নাতি নাতনির পাঠশালা</p></div>
+</footer>
+
+<div class="float-contact" id="floatContact">
+  <button class="float-btn" id="floatBtn" onclick="toggleContactMenu()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </button>
+  <div class="float-menu" id="floatMenu">
+    <a href="https://www.messenger.com/t/61553759634869" target="_blank" class="float-option messenger"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.936 1.46 5.554 3.745 7.268V22l3.418-1.88c.913.254 1.88.39 2.837.39 5.523 0 10-4.145 10-9.267C22 6.145 17.523 2 12 2zm.99 12.48l-2.545-2.712-4.97 2.712 5.468-5.808 2.61 2.712 4.905-2.712-5.468 5.808z"/></svg>Messenger</a>
+    <a href="https://wa.me/8801940889033" target="_blank" class="float-option whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>WhatsApp</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wordfile4@gmail.com" target="_blank" class="float-option email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>Email</a>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
